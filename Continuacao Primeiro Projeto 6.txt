@@ -1,0 +1,118 @@
+Vamos criar um formulário. Mas antes, vamos até a nossa página principal e clicamos no "Entre em contato" que está bem destacado na página, e aí nos direcionamos à ela. A partir daí, é no código que trabalharemos. Cabe ressaltar que foi a mesma página que criamos dias atrás.
+
+Vamos criar o formulário. Pra você criar um formulário, usamos uma tag chamada <form> </form>.
+
+Ela possui abertura e fechamento e é dentro dela que irá funcionar o nosso formulário web. Formulários web são muito comuns na web e são a partir deles em que você passa alguma informação e a quem recebe, recebe a informação. 
+
+Dentro das tags <form> </form>, começamos com a tag label. Label em inglês é rótulo, seria então o nome do nosso formulário. 
+
+Então pra dar esse rótulo, aplicar ele no código, dentro das tag <form>, colocamos assim:
+
+<label for="">Nome Completo</label> 
+
+O que vai aparecer no código? Apenas um nome. E pra avisar, não iremos usar CSS ou explicar melhores termos agora, como o for aí em cima por exemplo, então foquemos apenas nesse básico. 
+
+Logo após em baixo dele, iremos colocar o campo onde a pessoa poderá digitar o nome dela, e em seguida o botão onde ela irá clicar em enviar.
+
+<input type="text" />
+<input type="submit" />
+
+Esses dois códigos ficam respectivamente abaixo do label. O que querem dizer? É simples, um input. Vamos por, introduzir uma informação. No caso ambos com abertura e fechamento e entre os parenteses, temos "text" e "submit". O text vai fazer aparecer um campo de texto e o submit um botão pra enviar, bem simples. Como estão um abaixo do outro, vão aparecer um ao lado do outro no código. Então no nosso código fica:
+
+Repetimos, iremos explicar maiores detalhes logo em seguida.
+
+<form>
+        <label for="">Nome Completo</label>
+        <input type="text" />
+        <input type="submit" />
+
+</form>
+
+Tudo bem organizado e explicado, com label(rótulo, nome do formulário), e os inputs que vão colocar o text(campo de informação onde a pessoa vai digitar, e o submit, que é o botão de enviar. Existem vários tipos de input, por exemplo se colocarmos um <input type="color" />
+vai aparecer uma barra ao lado do campo(Se colocarmos esse input depois do text claro), e essa barra estará repleta de opções de cores, sendo possível escolher uma cor a partir disso.
+
+Existe o input checkbox, que segue também o mesmo modelo acima e iria aparecer uma caixa pra você desmarcar e marcar com o mouse.
+
+No nosso código, demos um espaçamento entre as linhas de label e input. Usando a tag <br /> que não possui fechamento, criamos uma abertura entre um espaço, então no nosso código, ficou assim previamente:
+
+        <label for="">Nome Completo</label>
+        <input type="text" /> <br /> <br />
+        <input type="color" /> <br /> <br />
+        <input type="checkbox" /> <br /> <br />
+        <input type="submit" /> <br /> <br />
+
+Cada <br /> significa uma quebra de linha, espaçamento. Mostrando na página então primeiro o nome completo vindo do Label, a caixa, ou campo pro usuário escrever chamada text, aí em baixo a caixa de cor, a checkbox que é pra selecionar e depois o botão de enviar.
+
+Mas faremos diferente no código. 
+
+Existe também o de password, input type="password" que vai mostrar apenas algarismos, quer dizer, pontinhos escuros pro usuário digitar. Quando ele digitar, só vai aparecer esses buraquinhos.
+
+Como mostrado, existem vários inputs, que vão mostrar para o usuário diversos e diversas opções pra ele poder digitar, por suas informações e etc. Pode ver com mais detalhes no link a seguir que é este: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input.
+
+Vamos fazer o exercício da aula na página que criamos no qual se chama dragba.html
+
+Segue a lista de alguns inputs:
+
+text: Vai aparecer um campo de texto.
+color: Vai aparecer uma caixa repleta de opções de cores pra escolher.
+submit: Vai aparecer um botão de enviar.
+file: Vai aparecer um botão pra enviar um arquivo.
+date: Vai aparecer uma mini caixa com opções de data, ou seja, dia, mês, ano.
+radio: Vai aparecer um botão pra selecionar. Caso clique, ficará azul, ou seja, foi selecionado.
+
+Num código qualquer, ficaria:
+
+<form>
+        <label for="">Nosso exercício</label>
+        <input type="text"><br /> <br />
+        <input type="color"> <br /> <br />
+        <input type="file"> <br /> <br />
+        <input type="date"> <br /> <br />
+        <input type="radio"> <br /> <br />
+        <input type="submit"> <br /> <br />
+</form>
+
+Agora vamos fazer diferente, com outras instruções. Voltemos à página de contato, e iremos tirar a nossa lista ul desordenada, e vamos começar de um outro jeito, também de outro jeito o nosso formulário, que ficará muito mais organizado. Começamos colocando o nosso endereço e nome, sem ser formulário por enquanto. 
+
+<h1> Meus contatos </h1>
+    <p>Endereço: Rua 7 de setembro, 470 Bairro Pio XII</p>
+    <p> Cel: (99) 9999-9999</p>
+    <p>Email: suporte@tipscode.com.br </p>
+
+E agora, o nosso formulário:
+
+<form>
+        <label for="">Nome Completo</label> <br />
+        <input type="text" /> <br /> <br />
+
+        <label for="">Email</label> <br />
+        <input type="email" /> <br />
+        <br />
+        <label for="">Sua Mensagem</label> <br />
+        <textarea></textarea> <br />
+        <br />
+        <input type="submit" /> <br />
+</form>
+
+O que significa o <textarea></textarea>? Ele abre um espaço livre de texto pro usuário. Ou seja, vai abrir um quadrado na página, onde o usuário poderá manipular a vontade o seu tamanho e digitar como quiser. Lembrando que <label for significa o rótulo e os <br /> as quebras de coluna, ou seja, um espaçamento entre as linhas.
+
+Dentro do atributo <textarea></textarea>, podemos manipular, ou seja, aumentar as linhas e colunas no código. 
+
+<textarea cols="30" rows="10">. Cols significa colunas e rows, as linhas. 
+
+Vamos usar o atributo "action" na nossa barra <form> do nosso formulário. O action quer dizer a ação que você quer que o seu formulário tome, então normalmente utilizamos os métodos get, point, delete, mas isso vamos explicar mais pra frente. Nesse momento, podemos atribuir uma ação muito simples, que é mandar o formulário do usuário pra outra página. 
+
+Então ficaria assim, de <form> para: 
+
+<form action="../index.html">. 
+
+O que quer dizer esses dois .. Na frente? Quando colocamos os dois pontos de primeira dentro dos algarismos, junto com um /, ou seja, digitamos primeiro ../, ele simplesmente vai mostrar no Vs Code todas as nossas pastas, então podemos escolher uma delas lá e simplesmente selecionar uma. Selecionamos a nossa principal, que é a index.html, e pronto, se o usuário escrever e enviar, vai enviar pra nossa página.
+
+Uma dúvida comum que você teve: O formulário da página contato ficou em formato de tabela, ou seja, coluna, por causa do <br> na frente do label. Do dragba não teve, então ficou um do lado do outro.
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+Pra colocar um link no seu documento html, usamos a tag <a>, elemento de âncora. Pra linkar uma página a outra, utilizamos o elemento a. O elemento a com um atributo chamado href, cria-se uma hiperligação nas páginas web, arquivos, endereços de emais,  etc. O conteúdo dentro dessa tag a irá indicar o destino do link, no caso quando tu clicar aí vai pro endereço. 
+
+Esse href é onde você colocará o endereço do site, pra quando o usuário clicar e ir ao endereço desejado. Depois do href, colocamos o texto do link. Quando o usuário clicar em cima desse texto, vai ser direcionado à página. 
+
+Por exemplo:
+
+<p>You can reach Michael at:</p>
+
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+
+O que temos aí em cima? Uma parágrafo, com inicio e fechamento, abaixo a abertura da tag de uma lista desordenada(pois iremos usar uma lista nesse exemplo), o inicio da tag de link <a href= com o link e depois a seta > indicando Website. O que vai mostrar na tela do usuário vai ser esse website, e vai ser esse nome website que ela vai clicar pra se direcionar no endereço desejado. O mesmo acontece em baixo... Não vai mostrar pro usuário o email, mas sim só a palavra a seguir, "email" 
+
+Nesse caso acima ela está entre tag de lista, que mostra um ponto já que está entre a tag <li> que possui sua abertura <li> e fechamento </li>, essa tag <li> mostra o ponto.
+
+Mas não precisa ser apenas assim. No nosso código, vamos usar de outro jeito sem ser lista. 
+
+<p> CTO da escola de programação <strong> <a href="https://www.tipscode.com.br">TipsCode </a> </strong> </p>
+
+O que temos acima? O parágrafo, <p> </p> ou seja, tudo isso foi feito dentro de um parágrafo. O negrito <strong> </strong> e no meio desse negrito a tag de abertura pra encaixar o link <a, e seu fechamento após usar o atributo href para colocar o link </a>. Como explicado, o que vai aparecer pro usuário vai ser apenas o TipsCode, não a URL, que seria o link que colocamos aqui. 
+
+Com isso, você pode ver que podemos colocar tags dentro de tags e alinhar também. 
+
+No nosso próprio código, fizemos um exemplo: 
+
+ <ul> 
+            <li> <a href="https://www.tipscode.com.br">Link número 1</a></li>
+            <li> <a href="https://www.tipscode.com.br">Link número 2</a></li>
+
+ </ul>
+
+Como pode ver, tag atrás de tag, a tag de ponto <li>, depois a de link <a, aí colocamos o link com o atributo href e depois o texto de direcionamento que vai ser o que vai aparecer pra pessoa, aí fechamos a tag de link </a> e depois fechamos a tag do ponto </li>. Aí em baixo, fechamos a de lista. 
+
+E se acima não quisesse com negrito, como uma forma diferente do primeiro exemplo que demos acima? 
+
+<p> CTO da escola de programação <a href="https://www.tipscode.com.br">TipsCode</a>  </p>
+
+Ficaria assim. Colocamos o link apenas para aquela palavra desejada. A pessoa iria clicar no TipsCode e iria pra página direcionada.
+
+Usamos a ul, lista desordenada. Mas poderíamos ter usamos a ordenada também, que é a <ol>. 
+
+Vamos usá-la no código, não usando as citações acima. 
+
+No nosso código, fizemos algo diferente. Criamos um new folder e depois criamos um novo arquivo html chamado contato.html, nesse arquivo fizemos um novo html 5, ou seja, uma nova página, e fizemos tudo do básico lá de novo, porém, criamos apenas um <h1> chamado meus contatos e uma lista desordenada <ul>, com a tag <li> mostrando telefone, e email. Só pra mostrar mesmo como fazer um link de direcionamento. Depois, na página index, lá em baixo, criamos o seguinte: 
+
+<a href="contato/contato.html">
+
+            <h2> Entre em contato </h2>
+
+</a>
+
+Desse modo, criamos a tag de link <a, usamos o atributo, digitamos o direcionamento e em baixo criamos um <h2> pra mostrar o texto que vai aparecer pra pessoa. Aí quando ela clicar, vai se direcionar pra página que criamos no html e então se informará. Viu, como foi fácil criar um link de direcionamento e uma página?
+
+
+
+Não se esqueça do desafio da aula Links e âncora, que o professor deixou no final dela!!!
+Veja o vídeo e faça. Crie duas páginas e link elas na principal index. 

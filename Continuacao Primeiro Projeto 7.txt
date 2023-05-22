@@ -1,0 +1,65 @@
+Como pode notar, o nosso formulário não faz muito sentido sem JavaScript, porque temos que capturar as informações. E eu consigo capturá-la com uma linguagem de programação, e no curso vamos aprender java script, porém podemos usar o atributo action, de outra forma. 
+
+<form action="../index.html">
+        <label for="">Nome Completo</label> <br />
+        <input type="text" /> <br /> <br />
+
+        <label for="">Email</label> <br />
+        <input type="email" /> <br />
+        <br />
+        <label for="">Sua Mensagem</label> <br />
+        <textarea cols="30" rows="10"></textarea> <br />
+        <br />
+        <input type="submit" /> <br />
+</form>
+
+Nesse momento, esse é o nosso código. E agora, voltando ao atributo action.. Perceba que ele possui o link do nosso index.html, que ou seja, vai mandar as informações recolhidas desse formulário pra nossa página principal do HTML que criamos.
+
+Podemos trocar e colocar um atributo chamado chamado mailton, ficando: <form action="mailto:"
+
+O que esse mailto faz? Eu posso adicionar por exemplo, um email, para que as informações que o usuário digitou vá para esse email. 
+
+E aí quando o usuário clicar no submit (Que vai ser o botão enviar), vai direto pro nosso email.
+
+Porém, eu preciso colocar mais uma coisa, que é o método, ou method. Não vamos nos aprofundar muito nisso agora, mas o method quer dizer o tipo de requisição, a requisição é como se fosse uma chamada. Por exemplo, é como se o browser(navegador) perguntasse pro html, qual é o tipo dessa informação, se isso é um pedido ou um envio por exemplo. Nesse caso, eu vou enviar algo, que é um email, então é um POST.
+
+Ficará assim no código: <form action="mailto:rodrigoliminho@gmail.com" method="POST"
+
+Basicamente é isso, porque é assunto dos modulos futuros. 
+
+Então eu vou enviar o método post que é de enviar para o meu email, esse post faz enviar o formulário ao meu email ou o email que tu queira. Porém, pra esse recurso funcionar, precisamos ter no computador um gerenciador de email já configurado.
+
+No windows, já tem um padrão...
+
+Então só pra testar, vamos abrir a nossa página HTML, preencher tudo com qualquer coisa e enviar, só pra testar. 
+
+Mas perceba, que não chegou nenhum contéudo para o nosso email. Por que? 
+
+Porque a gente precisa fazer algumas configurações no nosso formulário, como por exemplo, dizer pro nosso email que vai ser um texto, um texto plano, e dar pra ele, alguns identificadores. Por exemplo, o atributo name, que é o nome. 
+
+O name dá o título à mensagem quando ela é recebida, no caso vai ser por email, então esse atributo name dá o nome ao título da mensagem para quem vai receber. 
+
+Então no nosso código, vamos escrever no atributo "name" um "nome" ao label de Nome Completo, ao de Email o name de "email", e ao de Sua mensagem o name de "mensagem". 
+
+O que isso vai fazer? A mensagem recebida no email vai estar com o título de nome, que é o conteúdo do atributo "name" que preenchemos no código.
+
+Veja como ficou no código: 
+
+<form action="mailto:rodrigoliminho@gmail.com" method="POST"></form>
+        <label for="">Nome Completo</label> <br />
+        <input type="text" name="nome"/> <br /> <br />
+
+        <label for="">Email</label> <br />
+        <input type="email" name="email" /> <br />
+        <br />
+        <label for="">Sua Mensagem</label> <br />
+        <textarea name="Mensagem" cols="30" rows="10"></textarea> <br />
+        <br />
+        <input type="submit" /> <br />
+</form>
+
+Agora quando, na nossa página que fizemos no html, clicamos no botão enviar, que é o de submit, quando abrirmos o email, vai aparecer tudo direitinho. Vai aparecer o nome da mensagem que demos ao conteúdo (Ou seja, colocamos o título da mensagem ao lado da mensagem, então por exemplo, vai aparecer o seguinte: "nome: Nome Completo"). Claro que, esse "Nome Completo" em situações reais seria outra coisa, por exemplo o nome de quem preencheu o formulário. 
+
+Name também é o nome do elemento, em inglês: Name of the element. For example used by the server to identify the fields in form submits.
+
+Nome do elemento. Por exemplo, usado pelo servidor pra identificar o campo dos envios do formulário.

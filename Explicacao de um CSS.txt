@@ -1,0 +1,66 @@
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+Acima está um CSS de um formulário. 
+
+Explicação dele:
+
+Aqui está a explicação do CSS:
+
+Form.form-example: Esta regra de estilo se aplica a um elemento <form> que possui a classe CSS "Form-example". Define o estilo para o formulário.
+Display: table;: Define o elemento <form> como uma tabela, permitindo que os elementos filhos  sejam exibidos como células de tabela.
+
+
+Div.form-example: Esta regra de estilo se aplica a um elemento tag <div> que possui a classe CSS "form-example". Define o estilo para cada seção do formulário.
+Display: table-row;: Define o elemento <div> como uma linha de tabela, fazendo com que cada seção do formulário seja exibida em uma nova linha.
+
+
+Label, Input: Esta regra de estilo se aplica a todos os elementos <label> e <input>. Define o estilo para os rótulos e campos de entrada do formulário.
+Display: table-cell;: Define os elementos <label> e <input> como células de tabela, fazendo com que eles sejam exibidos em uma coluna da tabela.
+Margin-bottom: 10px;: Adiciona uma margem inferior de 10 pixels aos elementos <label> e <input>, criando um espaçamento entre as células da tabela verticalmente.
+
+
+Label: Esta regra de estilo se aplica somente aos elementos <label>. Define o estilo específico para os rótulos do formulário.
+Padding-right: 10px;: Adiciona um preenchimento de 10 pixels à direita dos rótulos, criando um espaço entre o texto do rótulo e o campo de entrada adjacente.
+
+
+
+
+Peço desculpas novamente pela confusão anterior. A propriedade margin-bottom: 10px; não é responsável por fazer os elementos <div> com a classe form-example ficarem na vertical.
+
+No caso do código CSS fornecido, o comportamento vertical dos elementos <div> com a classe form-example é definido pela propriedade display:table-row aplicada a eles. Essa propriedade é responsável por fazer com que esses elementos se comportem como linhas de uma tabela, ou seja, fiquem dispostos verticalmente, um abaixo do outro.
+
+A propriedade margin-bottom: 10px; aplicada aos elementos <label> e <input> apenas adiciona uma margem inferior de 10 pixels a esses elementos, criando um espaçamento visual entre eles e o próximo elemento abaixo deles.
+
+Sinto muito pela confusão anterior e espero que essa resposta esclareça sua dúvida.
+
+
+
+Exatamente! A razão pela qual os elementos <div> com a classe form-example são exibidos verticalmente como linhas de tabela é porque foi definido display: table para o elemento <form>. Isso estabelece o contexto da exibição como uma tabela.
+
+Quando você define display: table no elemento <form>, ele se comporta como uma tabela. E, ao definir display: table-row nos elementos <div> com a classe form-example, eles são tratados como linhas de tabela dentro do <form>. Isso faz com que esses elementos sejam exibidos verticalmente, um abaixo do outro, como células de uma tabela.
+
+Sem a definição display: table no elemento <form>, a propriedade display: table-row não teria efeito, e os elementos <div> seriam exibidos como elementos de bloco padrão, um abaixo do outro verticalmente.
+
+Portanto, é a combinação do display: table no <form> e display: table-row nos <div> que proporciona o layout vertical dos elementos <div> com a classe form-example.
+
+
+
+
+
+

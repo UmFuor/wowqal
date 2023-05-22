@@ -1,0 +1,31 @@
+Essa aula é apenas para nos aprofundarmos nas tabelas, não sendo mais praticado muita das práticas que vamos ver abaixo, então não se preocupe. 
+
+
+Estamos fazendo um novo exemplo de tabela, um exemplo com uma tabela associada a uma imagem. Dentro da tag body, demos um espaço antes do <img src="img/gostosalah.png ", e criamos uma tabela com duas células <td>, uma com a imagem e o link dela, e a outra com as nossas informações. Cabe ressaltar que optamos por fazer diferente da aula, onde o professor usou CTRL + X pra mudar de lugar as informações e colocar na tabela, nós decidimos deixar as informações e apenas copiar, deixando o que fizemos anteriormente onde estava. Podemos mudar com o recorrer da aula. 
+
+Relembrando, usamos dois <td> porque uma fica ao lado da outra. Então, primeiro ficaria a imagem, e depois as informações. 
+
+Como ficou no código: 
+
+<table>
+            <tr> 
+                <td><img src="img/gostosalah.png " alt="Foto do meu gato" width="18%"/></td>
+                <td>
+                     <h1>Rodrigo Lima</h1>
+                    <p> CTO da escola de programação <strong> <a href="https://www.tipscode.com.br">TipsCode</a></strong></p>
+                    <p> Sou programador há pouco mais de 06 anos. <em>Sou servo de Deus</em>, gosto de gatos</p>
+                </td>
+            </tr>
+</table>
+
+No nosso código pra parte visual de quem olha de fora, a nossa imagem na prática não ficou bem redimensionada. Então, vamos ter que editar a imagem. 
+
+Na nossa pasta Projeto simples html, vamos na pasta img onde está salvo as nossas imagens. Vamos abrir ela com o programa, no caso o gimp. No gimp, há algumas barras no canto superior esquerdo da tela, clique na barra "imagem" e vá em Redimensionar imagens. Feito, clique no símbolo do cadeado que é só um símbolo que indica que está fechado, então você clica e abre, tendo agora acesso as larguras e profundidades. Colocamos em largura e altura 180 pixels. Depois, vá novamente no canto superior esquerdo, clique em "arquivo" e nas opções que forem mostradas, clique em "exportar". Vai ser na própria pasta mesmo, onde estava a outra imagem. Clica em sim quando aparecer a opção de substituir. 
+
+Depois de tudo isso, volte no código e tire a opção "width 18%" que nós tínhamos feito antes. Salve, e volte na página que criamos. 
+
+Mesmo depois de tudo isso, ficou um espaço pequeno entre a imagem a nossa <td>, então devemos retirá-lo. Como mencionado antes, essa aula é de aprofundamento, muito do que estamos usando aqui não se é mais praticado. Então, utilizaremos a tag cellspacing. 
+
+Na tag de entrada da tabela, a <table>, de abertura, vamos dar um espaço antes da segunda seta e colocar o cellspacing. Vai ficar: <table cellspacing="20">, e isso organizará o código, deixando tudo alinhado. O cellspacing regula o tamanho da minha célula. 
+
+

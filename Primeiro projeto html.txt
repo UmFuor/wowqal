@@ -1,0 +1,60 @@
+Criando o primeiro projeto, um site simples em html. Coloquei na pasta projeto simples html. 
+
+Fomos na pasta da biblioteca, clicamos em arquivo e abrimos o windows powershell e depois abrir windows com powershell. E no power shell, digamos code . e assim, abrimos o nosso visual code, criamos o arquivo HTML e cá estamos. 
+
+Na página, colocamos html:5, o html 5, e ele já nos deu um código pronto. Uma base, no caso, para usarmos. 
+
+Vamos usar a versão 5 do html, e pra isso, temos que ter certeza que tem na primeira linha o <!DOCTYPE html> no nosso código. 
+
+Logo na linha 2 tem a tag html, que possui o atributo de lingua. Colocamos em português. Sempre que formos fazer esse tipo de documento, temos que fazer essa especificação. 
+
+O UTF-8 é o tipo de codificação que a nossa página vai usar. No caso, esse codificação é binário, e ele aborda todos os caracteres e açentos.
+
+A tag head ela é a parte de configuração da nossa página. Então, qual o sistema de codificação, qual o título da página, quais os tipos de arquivos que você vai querer nessa página, então fica tudo nessa tag. E aqui, dentro da tag red, temos a tag title, que é pra você deixar o nome da página na aba do navegador. 
+
+A tag body, que quer dizer corpo, é onde ficará todo o conteúdo do nosso código, então o conteúdo ficará dentro da tag body.
+
+Como damos ênfase em uma palavra? Podemos usar o negrito, ou um itálico. Devido a usarmos a versão 5 do html, ele possui uma tag pro negrito e itálico diferente da versão 4, que era a antiga. Na questão do itálico, poderíamos usar o i, que seria a versão antiga, a 4. Ela deixaria a palavra em itálico, destacando das demais. Na versão 5, usamos a em, que dá um destaque melhor visualmente falando. 
+
+Pra usar, podemos usar mediante a tag de pagrafos, p.
+
+Por exemplo: <p> Ele costuma e gosta muito de tomar <em> Sorvete </em> e comer banana nas horas vagas</p>
+
+ - Aqui temos a tag de parágrafo <p>, e para destacar uma palavra 
+no meio desse parágrafo, colocamos o <em> e seu fechamento </em>, assim destacando essa palavra e pondo-a em itálico. Ficando no meio do parágrafo, antes do seu fechamento.
+
+Com o negrito a mesma coisa. A diferença é que o antigo usávamos a B, e no novo usamos a strong. Do mesmo modo, a tag possui começo e fim, e é colocada dentro do parágrafo destacando uma palavra.
+
+<p> CTO da escola de programação <strong>TipsCode</strong></p> 
+
+- Aqui há um exemplo do mesmo método. No caso, usamos a strong, mas poderíamos usar a tag <b> também. 
+
+
+Como criar listas no HTML: 
+
+A Tag <ul> é uma tag responsável por criar uma lista desordenada, tendo abertura e fechando, e o conteúdo dela, conteúdo da lista desordenada, entre elas. E a tag <ol> é responsável por criar uma lista ordenada. A lista desordenada geralmente possui um ponto na frente dela, e a ordenada geralmente carrega um número. 
+
+Na desordenada, colocamos o <li> </li> antes e depois da palavra, indicando um ponto, que vai aparecer um ponto antes da palavra. 
+Na ordenada, também colocamos. Mas dessa vez, na ordenada, vai indicar um número. Como fizemos na aula, podemos colocar um cabeçalho antes das listas, pra indicar o significado dela, um <h3>. 
+
+Podemos adicionar atributos nas listas. O que seriam esses atributos? Relembrando, atributos são caracteristicas que podemos adicionar nas tags, tais como tamanho, cor, etc. Nas listas desordenadas <ul> não podemos o fazer, mas nas ordenadas <ol> podemos mudar o seu indicador, que por padrão são números, para outro tipo, por exemplo, números romanos. 
+
+Então.. Num exemplo de lista ordenada: 
+
+Sem atribuição, isto é, sem alterar
+
+<ol>
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ol>
+
+Com alteração. Colocando um atributo na tag, que neste caso serve pra gente personalizar colocando uma letra, um algaritmo romano ou número e etc. Uma lista ordenada <ol> que possui abertura e fechamento, junto do <li> que vai mostrar o indicador, e este indicador é personalizado pelo atributo type
+<ol type="">
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ol>
+
+
+

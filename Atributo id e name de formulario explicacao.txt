@@ -1,0 +1,7 @@
+No contexto de formulários HTML, os termos "name" e "id" são atributos usados para identificar e referenciar elementos do formulário.
+
+"name": O atributo "name" é usado para definir o nome do campo de entrada. Ele é usado para identificar o campo de entrada quando os dados do formulário são enviados ao servidor. O valor do atributo "name" é enviado junto com o valor inserido pelo usuário. Por exemplo, ao preencher um campo de entrada de texto com o atributo "name" definido como "username", o valor inserido pelo usuário será enviado ao servidor com o nome "username" e pode ser acessado no lado do servidor.
+
+"id": O atributo "id" é usado para fornecer uma identificação única para um elemento ou tag HTML. Ele é usado para identificar exclusivamente um elemento na página. O valor do atributo "id" é usado para referenciar o elemento de forma única em JavaScript, CSS ou para associar rótulos (usando o atributo "for" em tags <label>) a elementos de entrada específicos. O atributo "id" é útil quando você precisa selecionar ou manipular um elemento específico usando JavaScript ou CSS.
+
+Em resumo, o atributo "name" é usado para identificar um campo de entrada em termos de envio de dados, enquanto o atributo "id" é usado para identificar exclusivamente um elemento HTML para fins de referência ou manipulação em JavaScript e CSS.

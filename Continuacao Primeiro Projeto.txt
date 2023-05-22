@@ -1,0 +1,31 @@
+Temos a tag <u> que assim como outras, possui fechamento sendo <u> e </u> no final. Ela pode ser usada durante um paragrafo <p>, destacando uma palavra nesse mesmo parágrafo. Ela destacaria colocando uma linha circular vermelha em forma de minhoca em baixo, como uma ironia. 
+
+A tag <abbr> com abertura <abbr> e fechamento </abbr> serve para abreviações. No caso, do mesmo modo em que usamos durante uma frase, que pode ser um parágrafo, ela é colocada no começo e no final da palavra, que seria essa abreviação, e assim tendo uma forma diferente. A cor poderia ser editada com CSS. 
+
+Com a <abbr> </abbr>, podemos atribuir um atributo nela, que se chama title. Esse atributo faria com que quando o usuário passe o mouse por cima da palavra, mostrasse o significado da abreviação. Claro, você adicionaria esse significado, por exemplo: 
+
+<p> Estamos estudando <abbr title="Hypertext Markup Language">HTML</abbr> </p>
+
+O que quer dizer essa frase? Temos um paragrafo com começo e fim, <p> e </p> respectivamente, e no meio o código <abbr> com a adição do title. Porque se quisessemos sem o tittle, ficaria <abbr>HTML</abbr> e só ficaria de outro jeito sem especificar quando o usuário passasse o mouse em cima, porém, como colocamos o title, ele fica na frente do conteúdo que queremos abreviar e coloca o significado da palavra, que é a gente que põe. 
+
+Podemos também marcar um texto como excluido, isto é, mostrar uma linha cortando a palavra como se não valesse mais. Com o <del> </del>, que ficaria no começo e final da palavra, destacaria uma linha no meio dela, ficando como se estivesse excluido. 
+
+O <ins> </ins> é o contrário da del. Também no começo e final da palavra do parágrafo que queremos, ela marca uma linha em baixo dela.
+
+
+Como adicionar uma imagem no nosso código html? Com a tag img. Ela não possui fechamento, sendo ele, o seu fechamento, automático. Geralmente vamos usar o atributo src, que significa source, a fonte, colocando o link entre as tags <img /> para assim a imagem rodar no navegador. No caso, a URL da imagem. 
+
+<img src="" alt="" />
+
+Dentro do src, colocamos a URL da imagem que copiamos dela. A tag alt está ali pro caso da imagem não poder ser mostrada, então ela coloca uma descrição da imagem no lugar, algum texto. 
+
+Podemos colocar de outra forma a imagem dentro do src, para que não fique assim grandona a URL dentro do src. Selecionamos a imagem e salvamos ela dentro da mesma pasta do nosso projeto, que no caso é o projeto html. Assim, quando abrirmos o vs code, vamos ter a opção de img, ao lado esquerdo numa pastinha verde. Clicamos nela e podemos ver lá a imagem. 
+
+Pra por dentro do src, escreva img e assim que aparecer a opção do nome da imagem mais o endereço(Se for JPG ou JPEG e etc) e aí clicamos. Vale ressaltar que temos que renomear o nome da imagem, pois geralmente ela vem em formato de números quando salvamos, então renomeamos pra ficar mais curta. 
+
+Com o width conseguimos editar o tamanho, ou a largura da imagem. Ela fica antes da tag img se fechar, então.. 
+
+<img src="img/gostosalah.png "
+         alt="Foto do meu gato" width="30%"/>
+
+Aqui temos um exemplo perfeito. A tag img, a source com o link da imagem, o alt para uma descrição e o width manipulando o tamanho da imagem pra 30%, deixando ela mais baixa. Podemos diminuir também, e no caso o fizemos pra 18%.

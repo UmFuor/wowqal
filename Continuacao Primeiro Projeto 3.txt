@@ -1,0 +1,70 @@
+<hr />
+
+        <h3> Ou entre em contato por: </h3>
+
+        <a href="dop/primeiro.html">
+            <h4>Primeiro Suporte Opcional</h4>
+        
+        </a>
+
+        <a href="dop/segundo.html">
+            <h4>Segundo Suporte Opcional</h4>
+         </a>
+
+         <hr /> 
+
+O que está acima é o código do exercício que o professor passou na aula links e âncora. As páginas relacionadas já estão no vscode, então não se preocupe. 
+
+Vamos aprender a criar uma tabela no HTML. As tabelas no HTML não se diferenciam muito de um excel ou word, pelo contrário, possuem também colunas, células e linhas. 
+
+No HTML, começamos a nossa tabela com a tag <table>. Ela possui abertura e fechamento, e o conteúdo dentro dela que vai ser a nossa tabela. 
+
+A tag <tr> que possui abertura e fechamento, definem um punhado de linhas da nossa tabela. Ou seja, vai ser dentro dela que vai partir as colunas, células e etc. Dentro dessa tag <tr> podem ser definidos sequências de linhas de outra tag de tabela, por exemplo a <td> que são as células. Num exemplo, dentro da tag <tr> </tr>, dentro desse alcance, colocamos         <td>7</td> e <td>4,569</td>, um em baixo do outro, respectivamente. O que vai acontecer, vai aparecer pro usuário? Primeiro vai aparecer a célula 7 e depois a célula 4,569. 
+
+A tag <td> são as células da nossa tabela. É um elemento do HTML que define as células da nossa tabela. Em inglês, o Table Data Cell element. Células de uma coluna, por exemplo. 
+
+A tag <th> definem a cabeça de uma coluna da nossa tabela, sendo a thead. Essa tag possui abertura e fechamento, e é usada dentro da tag <tr>. Podemos definir uma, duas, ou até mais cabeças de colunas. Se você colocar uma em baixo da outra, vão ficar duas ou mais colunas uma lado a lado. 
+
+A tag <thead> dá um significado semântico ao código, significando a cabeça da nossa tabela, tudo que vai encabeçar o inicio dela, as colunas. 
+
+A tag <tbody> dá o mesmo significado, significando o corpo, o conteúdo da tabela. 
+
+Essas duas últimas são mais significados mesmo, pra deixar o código organizado. 
+
+Aqui em baixo temos um exemplo de uma tabela bem estruturada e com seus significados bem definidos. A tag <table> com abertura e fechamento, define aonde o conteúdo da tabela vai estar, que vai ser dentro dela. E aí começamos com as tr, que é onde as linhas como colunas e e células vão ficar, tudo vai ocorrer dentro delas. 
+
+Primeiro o cabeçalho da nossa tabela, e aí definimos os nomes. Player, Goobles e Za 'taak. Pro usuário, vai aparecer um nome ao lado do outro, sendo três no total. No código estão entre as tags <th> </th>, e dentro das tags <tr> </tr> que repito, é onde tudo vai acontecer. Abaixo acontece a mesma coisa, abrimos e fechamos a tag tr. Mas dessa vez, começamos com a tag th que é cabeça, a que vai liderar, e ao lado as de células(td). Na prática, pro usuário, vai aparecer TR-7, 7, 4,569, um do lado do outro, começando por 7(th) e terminando em 4569(td), e aí fechamos a tag tr e repetimos o mesmo processo logo depois abaixo. 
+
+No código, vai aparecer uma tabela simultanea, uma ao lado da outra, com as tags thead, td que é a de células, uma ao lado. Primeiro aparece as th, em baixo organizamos quem vai seguir. 
+
+<table>
+    <tr>
+        <th> Player</th>
+        <th> Gloobles</th>
+        <th> Za'taak</th>
+    </tr>
+    <tr>
+	<th> TR-7 </th>
+        <td>7</td>
+        <td>4,569</td>
+    </tr>
+    <tr>
+	<th> Khiresh Odo </th>
+        <td>7</td>
+        <td>7,223</td>
+    </tr>
+    <tr>
+	<th> Mia Oolong </th> 
+        <td>9</td>
+        <td>6,219</td>
+    </tr>
+</table>
+
+No nosso código, vamos fazer uma tabela também. Mas diferente desta, ela irá possuir as tags thead e tbody. 
+
+O HTML, CSS e Java script são os que definem os sites da internet. O html estrutura as páginas de internet, o CSS é pra estilizar, dar cor e o Java Script que é o que dá vida a tudo isso. 
+
+
+
+
+
